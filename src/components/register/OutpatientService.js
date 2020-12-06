@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import useSize from '../../hooks/useSize';
-import img001 from './img/001.png'
+import img001 from './img/001.png';
 
 
 
