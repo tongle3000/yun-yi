@@ -1,51 +1,59 @@
 /* :root body{overflow: hidden;} */
-.outpatient-service{
+.yunyi-outpatient-service{
     background: url('../img/001.png') no-repeat;
     background-size: 100%;
 }
-.outpatient-service .box-padding{padding:1.2rem 13%;}
-.bg-yunyi-green{background:rgb(112,182,3);}
-.bg-yunyi-red{background: rgb(255,77,0);}
+.yunyi-box-padding{padding:1.2rem 13% 0;}
+.yunyi-bg-green{background:rgb(112,182,3);}
+.yunyi-bg-red{background: rgb(255,77,0);}
 
-.border-yunyi-green{border-color:rgb(112,182,3)}
-.border-width{border-width: 3px;}
 
 
 /* header */
-.outpatient-header{ height: 7rem;}
-.outpatient-header .header-img{ width: 9rem;height:7rem}
+.yunyi-outpatient-header{ height: 7rem;}
+.yunyi-outpatient-header .yunyi-header-img{ width: 9rem;height:7rem}
 
 /* main */
-.location{margin-left:20%; margin-right: 20%;}
+:root .yunyi-location{margin-left:20%; margin-right: 20%;}
 :root .square-btn {
     padding-top: 2rem;
 }
 :root .square-btn .cell{
-    border-radius: 0.5rem; margin-bottom:2rem;
-    box-shadow: .4rem .4rem .3rem #aaa;
+    border-radius: 0.5rem; 
+    margin-bottom:1.8rem;
+    
     font-size: 6.4rem;
     font-weight: bold;
     color:#fff;
 }
-:root .square-btn .cell.text{font-size: 3rem;}
+:root .square-btn .cell.text,
+:root .yunyi-btn-ok{
+    font-size: 3.4rem;
+    border-radius: 0.5rem; 
+}
 
+:root .yunyi-box-shadow{box-shadow: .4rem .4rem .3rem #aaa;}
 
-/* input */
+/* footer */
+.yunyi-footer-img{ width:45%; height: 11rem; }
+
+/* input button */
 :root ::-webkit-input-placeholder { 
     color:rgb(176,215,116); 
 }
-:root input.outpatient-service-input { 
+:root input.yunyi-num-input { 
     color:rgb(112,182,3); 
     padding:2rem 1rem;
     font-size: 2.4rem;
+    border-color:rgb(112,182,3);
+    border-width: 3px;
 }
-
 
 :root input:focus,:root button:focus{ 
     outline: none;
-    box-shadow: 0 0 0 3px rgba(112,182,3, 0.25);
+    box-shadow: 0 0 0 .3rem rgba(112,182,3, 0.25);
 }
-:root input.outpatient-service-input:focus{ 
+:root input.yunyi-num-input:focus{ 
     color:rgb(112,182,3);
     border-color:rgb(112,182,3);
 }
