@@ -19,7 +19,7 @@ const registerData = [
                 rooms:[
                     {
                         id: '1',
-                        room:'12诊室',
+                        room:'1诊室',
                         doctor:'钟南山',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 20,
@@ -27,15 +27,15 @@ const registerData = [
                     },
                     {
                         id: '2',
-                        room:'11诊室',
+                        room:'2诊室',
                         doctor:'刘德华',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 25,
-                        currentNum: 8,
+                        currentNum: 25,
                     },
                     {
                         id: '3',
-                        room:'12诊室',
+                        room:'3诊室',
                         doctor:'钟南山',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 20,
@@ -43,7 +43,7 @@ const registerData = [
                     },
                     {
                         id: '4',
-                        room:'11诊室',
+                        room:'4诊室',
                         doctor:'刘德华',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 25,
@@ -51,7 +51,7 @@ const registerData = [
                     },
                     {
                         id: '5',
-                        room:'12诊室',
+                        room:'5诊室',
                         doctor:'钟南山',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 20,
@@ -59,7 +59,7 @@ const registerData = [
                     },
                     {
                         id: '6',
-                        room:'11诊室',
+                        room:'6诊室',
                         doctor:'刘德华',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 25,
@@ -67,15 +67,15 @@ const registerData = [
                     },
                     {
                         id: '7',
-                        room:'12诊室',
+                        room:'7诊室',
                         doctor:'钟南山',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 20,
-                        currentNum: 20,
+                        currentNum: 19,
                     },
                     {
                         id: '8',
-                        room:'11诊室',
+                        room:'8诊室',
                         doctor:'刘德华',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 25,
@@ -83,7 +83,7 @@ const registerData = [
                     },
                     {
                         id: '9',
-                        room:'12诊室',
+                        room:'9诊室',
                         doctor:'钟南山',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 20,
@@ -91,14 +91,13 @@ const registerData = [
                     },
                     {
                         id: '10',
-                        room:'11诊室',
+                        room:'10诊室',
                         doctor:'刘德华',
                         photo:'http://5b0988e595225.cdn.sohucs.com/images/20191112/66edc967bed44dd98ae54ab5640320e1.jpeg',
                         allNum: 25,
                         currentNum: 8,
                     },
                 ]
-                
             },
             {
                 id:'002',
@@ -125,11 +124,18 @@ const registerData = [
                 ]
                 
             }
-        ]
+        ],
+        success: {
+            text:'恭喜你, 报到成功!',
+            note: '请在大厅耐心等候叫好'
+        },
+        error: {
+            text: '对不起，报到失败!',
+            note: '原因：未查到挂号信息!'
+        }
     }
 ];
 
 
 
-
-export { registerData };
+export { registerData,  };

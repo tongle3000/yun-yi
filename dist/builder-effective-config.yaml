@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+appId: yunyi
+productName: 云医报到屏
+copyright: 'Copyright © 2020 ${author}'
+files:
+  - filter:
+      - build/**/*
+      - node_modules/**/*
+      - settings/**/*
+      - package.json
+      - main.js
+      - ./src/App.js
+extends: null
+electronVersion: 11.0.3

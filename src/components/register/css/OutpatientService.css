@@ -1,41 +1,70 @@
-/* :root body{overflow: hidden;} */
+/* 全局 */
 .yunyi-outpatient-service{
     background: url('../img/001.png') no-repeat;
     background-size: 100%;
 }
-.yunyi-box-padding{padding:1.2rem 13% 0;}
+
+
+
+/* 全局 背景色 ==绿色== */
 .yunyi-bg-green{background:rgb(112,182,3);}
+/* 全局 背景色 ==红色== */
 .yunyi-bg-red{background: rgb(255,77,0);}
+/* 全局 背景色 ==黑色 透明度50%== */
+.yunyi-bg-black-opacity{background: rgba(0,0,0, .5);}
+
+/* 全局 背景色 ==蓝色== */
+.yunyi-bg-blue {background-color: #4a9ad0;}
+/* 全局 背景色 ==错误== */
+.yunyi-bg-danger{background-color:#e8346c;}
+
+/* 全局 字色 ==红色== */
+.yunyi-text-red{color: rgb(255,77,0);}
+/* 全局 字色 ==绿色== */
+.yunyi-text-green{color:rgb(112,182,3);}
+
+/* 全局 字色 ==错误== */
+.yunyi-text-danger{color:#e8346c;}
+
+/* 全局 边框 ==红色== */
+.yunyi-border-green{
+    border: 1px solid rgb(112,182,3);
+    border-collapse: collapse;
+}
 
 
 
 /* header */
-.yunyi-outpatient-header{ height: 7rem;}
-.yunyi-outpatient-header .yunyi-header-img{ width: 9rem;height:7rem}
+.yunyi-outpatient-header{ height: 6.5rem;}
+.yunyi-header-img{ width: 9rem;height:6.5rem}
+.yunyi-box-padding{padding:1rem 13% 0;}
+
 
 /* main */
 :root .yunyi-location{margin-left:20%; margin-right: 20%;}
-:root .square-btn {
-    padding-top: 2rem;
+:root .yunyi-square-btn {
+    padding-top: 1.8rem;
 }
-:root .square-btn .cell{
+:root .yunyi-square-btn .yunyi-cell{
     border-radius: 0.5rem; 
-    margin-bottom:1.8rem;
+    margin-bottom:1.5rem;
     
     font-size: 6.4rem;
     font-weight: bold;
     color:#fff;
 }
-:root .square-btn .cell.text,
+:root .yunyi-square-btn .yunyi-cell.yunyi-text,
 :root .yunyi-btn-ok{
     font-size: 3.4rem;
     border-radius: 0.5rem; 
 }
 
-:root .yunyi-box-shadow{box-shadow: .4rem .4rem .3rem #aaa;}
+.yunyi-box-shadow{box-shadow: .3rem .3rem .3rem #aaa;}
+.yunyi-box-shadow1{box-shadow: .1rem .1rem .1rem #aaa;}
+.yunyi-box-shadow2{box-shadow: .2rem .2rem .2rem #aaa;}
 
 /* footer */
-.yunyi-footer-img{ width:45%; height: 11rem; }
+.yunyi-footer-img{ width:45%; height: 9.5rem; }
 
 /* input button */
 :root ::-webkit-input-placeholder { 
@@ -56,4 +85,56 @@
 :root input.yunyi-num-input:focus{ 
     color:rgb(112,182,3);
     border-color:rgb(112,182,3);
+}
+
+/* 挂号 选择医生页面 */
+.yunyi-select-doctor {
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 0;
+    height: 1280px;
+    z-index: 100;
+    overflow: hidden;
+}
+.yunyi-select-content{
+    /* margin:20% 10%; */
+    width:80%;
+    max-height: 80%;
+    overflow: hidden;
+}
+.yunyi-select-bd{
+    padding:2rem 8%;
+    height: 100%;
+
+}
+.yunyi-select-cell{
+    width: 46%;
+}
+.yunyi-select-cell .table{
+    margin-bottom: 0;
+}
+.yunyi-select-cell .table td, 
+.yunyi-select-cell .table th{
+    padding:0.3rem;
+}
+.yunyi-select-cell .btn{
+    font-size: 0.9rem;
+    width: 100%;
+}
+.yunyi-select-cell .yunyi-hzdl{
+    font-size: 0.9rem;
+}
+.yunyi-select-cell .yunyi-doctor{
+    width: 6rem;
+    height: 7.8rem;
+}
+/* 报到成功 */
+.yunyi-success,.yunyi-error {
+    width:70%;
+}
+
+.yunyi-success-icon,.yunyi-error-icon {
+    margin-top: -4rem
+    
 }
